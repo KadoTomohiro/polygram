@@ -1,0 +1,11 @@
+    <input type="number" min="3" [formControl]="vertex">
+  角形
+  <canvas #canvas width="500" height="500"></canvas>
+  パターン
+    <select [formControl]="connectPattern">
+      <option *ngFor="let pattern of patterns" [ngValue]="pattern">{{pattern}}</option>
+    </select>
+  <input type="range" min="0"
+         [max]="maximumPattern"
+         [formControl]="pattern">
+{{pattern.value}}:[{{distances}}]
