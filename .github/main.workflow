@@ -27,7 +27,7 @@ action "DeployGhPages" {
   uses = "maxheld83/ghpages@v0.2.1"
   needs = ["Build"]
   env = {
-    BUILD_DIR = "dist/polylateral/"
+    BUILD_DIR = "dist/polygram/"
   }
   secrets = ["GITHUB_TOKEN", "GH_PAT"]
 }
