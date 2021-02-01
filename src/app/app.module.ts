@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PolygramComponent } from './polygram/polygram.component';
-import {MatCardModule, MatInputModule} from '@angular/material';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input'
 import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
